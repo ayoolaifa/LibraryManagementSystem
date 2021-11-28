@@ -1,7 +1,7 @@
 Book Checkout
 Date: 28/11/2021
-Member ID: fopa
-Book ID: 11
+Member ID: dftr
+Book ID: 2
 ---------------
 Book Checkout
 Date: 28/11/2021
