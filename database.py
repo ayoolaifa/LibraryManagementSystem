@@ -29,8 +29,8 @@ def write_to_file(list_of_books):
 
 
 def write_to_log_file(function, date, member_id, book_id):
-    f = open("logfile.txt", "w")
+    f = open("logfile.txt", "r+")
     for i in f:
-            f.write(i)
-    f.write(function + "\n" + date + "\n" + member_id + "\n" + book_id + "\n" + "---------------")
+        f.write(i)
+    f.write(function + "\n" + str(date) + "\n" + str(member_id) + "\n" + str(book_id) + "\n" + "---------------" + "\n")
     f.close()
