@@ -1,20 +1,20 @@
-Book Checkout
-Date: 28/11/2021
-Member ID: dftr
-Book ID: 2
----------------
-Book Checkout
+Book RETURN
+Date: 29/11/2021
+Member ID: tlaf
+Book ID: 10
+----------------
+Book CHECKOUT
 Date: 28/11/2021
 Member ID: tlaf
 Book ID: 10
 ---------------
-Book Checkout
-Date: 28/11/2021
+Book CHECKOUT
+Date: 22/11/2021
 Member ID: komc
 Book ID: 5
 ---------------
-Book Checkout
-Date: 28/11/2021
+Book CHECKOUT
+Date: 25/11/2021
 Member ID: doas
 Book ID: 8
 ---------------

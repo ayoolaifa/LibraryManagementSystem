@@ -1,4 +1,4 @@
-1 | Romance | Noughts & Crosses | Malorie Blackman | 01/09/2021 | coao | 18
+1 | Romance | Noughts & Crosses | Malorie Blackman | 01/09/2021 | 0 | 18
 2 | Action | The Thursday Murder Club | Richard Osman | 05/07/2019 | dftr | 0
 3 | Sci-Fi | Dune | Frank Herbert | 24/04/2000 | 0 | 35
 4 | Sci-Fi | The Martian | Andy Weir | 21/01/2007 | 0 | 0
@@ -7,7 +7,7 @@
 7 | Non-Fiction | Python For Dummies | Firat Batmaz | 11/12/2003 | hsfd | 70
 8 | Adventure | The Lord Of The Rings | J. R. R. Tolkien | 29/11/2005 | doas | 0
 9 | Action | Catching Fire | Suzanne Collins | 04/09/2015 | 0 | 0
-10 | Romance | Noughts & Crosses | Malorie Blackman | 01/09/2021 | tlaf | 0
+10 | Romance | Noughts & Crosses | Malorie Blackman | 01/09/2021 | 0 | 0
 11 | Action | Mockingjay | Suzanne Collins | 02/05/2018 | fopa | 0
 12 | Fantasy | Harry Potter and the Philosopher's Stone | J. K. Rowling | 17/10/2003 | 0 | 59
 13 | Fantasy | Harry Potter and the Philosopher's Stone | J. K. Rowling | 17/10/2003 | 0 | 0
