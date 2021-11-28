@@ -1,4 +1,3 @@
-
 def line_count():
     f = open("database.txt", "r")
     Count = 1
@@ -26,4 +25,12 @@ def write_to_file(list_of_books):
     for i in list_of_books:
         string_of_books += i + "\n"
     f.write(string_of_books)
+    f.close()
+
+
+def write_to_log_file(function, date, member_id, book_id):
+    f = open("logfile.txt", "w")
+    for i in f:
+            f.write(i)
+    f.write(function + "\n" + date + "\n" + member_id + "\n" + book_id + "\n" + "---------------")
     f.close()

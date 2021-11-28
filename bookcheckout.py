@@ -1,7 +1,10 @@
 import database
-
+from datetime import date
 
 def checkout(book_id, member_id):
+    today = date.today()
+    # dd/mm/YY
+    d1 = today.strftime("%d/%m/%Y")
     available = False
     list_of_books = database.file_to_text()
     for i in range(0, len(list_of_books)):
@@ -18,6 +21,7 @@ def checkout(book_id, member_id):
                     line += " | " + str(book_line_list[j])
             list_of_books.insert(i, line)
             database.write_to_file(list_of_books)
+            database.write_to_log_file("Checkout", d1, member_id, book_id)
         elif int(book_line_list[0]) >= book_id:
             break
 
