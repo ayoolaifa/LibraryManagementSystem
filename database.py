@@ -32,3 +32,12 @@ def write_to_log_file(function, date, member_id, book_id):
     f = open("logfile.txt", "r+")
     f.write("Book "+ function + "\n" + "Date: " + str(date) + "\n" + "Member ID: " + str(member_id) + "\n" + "Book ID: " + str(book_id) + "\n" + "---------------" )
     f.close()
+
+def logfile_to_text():
+    list_of_books = []
+    f = open("logfile.txt", "r")
+    for l in f:
+        list_of_books = list_of_books + l.split("\n")
+    print(list_of_books)
+
+logfile_to_text()
