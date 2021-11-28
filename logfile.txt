@@ -1,19 +1,19 @@
-Book RETURN
+RETURN
 Date: 29/11/2021
 Member ID: tlaf
 Book ID: 10
-----------------
-Book CHECKOUT
+---------------
+CHECKOUT
 Date: 28/11/2021
 Member ID: tlaf
 Book ID: 10
 ---------------
-Book CHECKOUT
+CHECKOUT
 Date: 22/11/2021
 Member ID: komc
 Book ID: 5
 ---------------
-Book CHECKOUT
+CHECKOUT
 Date: 25/11/2021
 Member ID: doas
 Book ID: 8

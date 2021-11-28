@@ -30,14 +30,25 @@ def write_to_file(list_of_books):
 
 def write_to_log_file(function, date, member_id, book_id):
     f = open("logfile.txt", "r+")
-    f.write("Book "+ function + "\n" + "Date: " + str(date) + "\n" + "Member ID: " + str(member_id) + "\n" + "Book ID: " + str(book_id) + "\n" + "---------------" )
+    f.write(function + "\n" + "Date: " + str(date) + "\n" + "Member ID: " + str(member_id) + "\n" + "Book ID: " + str(
+        book_id) + "\n" + "---------------")
     f.close()
 
+
 def logfile_to_text():
-    list_of_books = []
+    log_string = ""
+    list_of_logs = []
     f = open("logfile.txt", "r")
     for l in f:
-        list_of_books = list_of_books + l.split("\n")
-    print(list_of_books)
+        list_of_logs += l.split("\n")
+    for i in range(0, len(list_of_logs)):
+        if list_of_logs[i] != '---------------':
+            log_string += list_of_logs[i] + " "
+        elif list_of_logs[i] == '---------------' and list_of_logs[i] != len(list_of_logs):
+            list_of_logs[i] = "| "
+            log_string += list_of_logs[i]
+    new_list_of_logs = log_string.split(" | ")
+    return new_list_of_logs
 
-logfile_to_text()
+
+print(logfile_to_text())
