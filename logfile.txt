@@ -1,20 +1,55 @@
 RETURN
 Date: 29/11/2021
-Member ID: tlaf
-Book ID: 10
+Member ID: hjfy
+Book ID: 12
+-----------------
+CHECKOUT
+Date: 29/11/2021
+Member ID: coao
+Book ID: 12
+---------------
+RETURN
+Date: 29/11/2021
+Member ID: coao
+Book ID: 12
 ---------------
 CHECKOUT
-Date: 28/11/2021
-Member ID: tlaf
-Book ID: 10
+Date: 29/11/2021
+Member ID: mopz
+Book ID: 1
+---------------
+RETURN
+Date: 29/11/2021
+Member ID: mopz
+Book ID: 1
 ---------------
 CHECKOUT
-Date: 22/11/2021
-Member ID: komc
-Book ID: 5
+Date: 29/11/2021
+Member ID: coao
+Book ID: 1
+---------------
+RETURN
+Date: 29/11/2021
+Member ID: dftr
+Book ID: 2
+---------------
+RETURN
+Date: 29/11/2021
+Member ID: coao
+Book ID: 6
 ---------------
 CHECKOUT
-Date: 25/11/2021
-Member ID: doas
-Book ID: 8
+Date: 29/11/2021
+Member ID: ypaf
+Book ID: 9
+---------------
+CHECKOUT
+Date: 29/11/2021
+Member ID: gsfe
+Book ID: 2
+---------------
+RETURN
+Date: 29/11/2021
+Member ID: ypaf
+Book ID: 9
 ---------------
