@@ -2,7 +2,7 @@ RETURN
 Date: 29/11/2021
 Member ID: hjfy
 Book ID: 12
------------------
+---------------
 CHECKOUT
 Date: 29/11/2021
 Member ID: coao

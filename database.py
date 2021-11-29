@@ -48,3 +48,5 @@ def logfile_to_text():
             log_string += list_of_logs[i]
     new_list_of_logs = log_string.split(" | ")
     return new_list_of_logs
+
+
