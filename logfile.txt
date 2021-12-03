@@ -1,55 +1,41 @@
-RETURN
-Date: 29/11/2021
-Member ID: hjfy
-Book ID: 12
----------------
-CHECKOUT
-Date: 29/11/2021
-Member ID: coao
-Book ID: 12
----------------
-RETURN
-Date: 29/11/2021
-Member ID: coao
-Book ID: 12
----------------
-CHECKOUT
-Date: 29/11/2021
-Member ID: mopz
-Book ID: 1
----------------
-RETURN
-Date: 29/11/2021
-Member ID: mopz
-Book ID: 1
----------------
-CHECKOUT
-Date: 29/11/2021
-Member ID: coao
-Book ID: 1
----------------
-RETURN
-Date: 29/11/2021
-Member ID: dftr
-Book ID: 2
----------------
-RETURN
-Date: 29/11/2021
-Member ID: coao
-Book ID: 6
----------------
-CHECKOUT
-Date: 29/11/2021
-Member ID: ypaf
-Book ID: 9
----------------
-CHECKOUT
-Date: 29/11/2021
-Member ID: gsfe
-Book ID: 2
----------------
-RETURN
-Date: 29/11/2021
-Member ID: ypaf
-Book ID: 9
----------------
+RETURN | 29/11/2021 | hjfy | 12
+CHECKOUT | 29/11/2021 | coao | 12
+RETURN | 29/11/2021 | coao | 12
+CHECKOUT | 29/11/2021 | mopz | 1
+RETURN | 29/11/2021 | mopz | 1
+CHECKOUT | 29/11/2021 | coao | 6
+CHECKOUT | 29/11/2021 | coao | 1
+RETURN | 29/11/2021 | dftr | 2
+RETURN | 29/11/2021 | coao | 6
+CHECKOUT | 29/11/2021 | ypaf | 9
+CHECKOUT | 29/11/2021 | gsfe | 2
+CHECKOUT | 29/11/2021 | coao | 3
+RETURN | 29/11/2021 | ypaf | 9
+RETURN | 30/11/2021 | tpoa | 15
+RETURN | 30/11/2021 | coao | 3
+CHECKOUT | 30/11/2021 | epda | 15
+CHECKOUT | 01/12/2021 | wfee | 4
+RETURN | 01/12/2021 | wfee | 4
+CHECKOUT | 02/12/2021 | erfd | 16
+CHECKOUT | 02/12/2021 | gfer | 14
+CHECKOUT | 02/12/2021 | efee | 5
+CHECKOUT | 02/12/2021 | frfs | 9
+RETURN | 02/12/2021 | coao | 1
+CHECKOUT | 02/12/2021 | fefe | 8
+RETURN | 02/12/2021 | epda | 15
+RETURN | 02/12/2021 | gfer | 14
+CHECKOUT | 02/12/2021 | ghsf | 10
+RETURN | 02/12/2021 | fefe | 8
+RETURN | 02/12/2021 | fopa | 11
+RETURN | 02/12/2021 | ghsf | 10
+RETURN | 02/12/2021 | gsfe | 2
+CHECKOUT | 02/12/2021 | kpyh | 15
+CHECKOUT | 02/12/2021 | feaf | 14
+RETURN | 03/12/2021 | efee | 5
+RETURN | 03/12/2021 | hsfd | 7
+RETURN | 03/12/2021 | frfs | 9
+RETURN | 03/12/2021 | wfds | 13
+RETURN | 03/12/2021 | feaf | 14
+RETURN | 03/12/2021 | kpyh | 15
+RETURN | 03/12/2021 | erfd | 16
+CHECKOUT | 03/12/2021 | vrsd | 16

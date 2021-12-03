@@ -37,7 +37,6 @@ def searchsubmit():
         search_list_box.insert(0,"Please input a book title")
     else:
         Results = booksearch.search(search)
-        print(Results)
         book_title.set("")
         search_show_books.config(text=search_list_box.get(ANCHOR))
         if(Results == []):
@@ -48,6 +47,8 @@ def searchsubmit():
                 search_list_box.insert(i+1, Results[i])
 
 def checkoutsubmit():
+    checkout_error_box.config(text="", bg='white')
+    return_error_box.config(text="", bg='white')
     book_id_text = book_id_1.get()
     member_id_text = member_id_1.get()
     Available = bookcheckout.checkout(int(book_id_text), member_id_text)
@@ -61,6 +62,8 @@ def checkoutsubmit():
         checkout_error_box.config(bg='red')
 
 def returnsubmit():
+    checkout_error_box.config(text="", bg='white')
+    return_error_box.config(text="", bg='white')
     return_book_id_text = book_id_2.get()
     Returned = bookreturn.returnbook(int(return_book_id_text))
     book_id_2.set("")
@@ -104,10 +107,10 @@ search_textbox.place(x=140, y=40)
 search_submit_btn = Button(search_frame, text='Submit', width='10', font=('calibre', 11), fg='white', bg=DarkPurple, command=searchsubmit)
 search_submit_btn.place(x=350, y=35)
 
-search_list_box = Listbox(search_frame, width='78', height='6')
+search_list_box = Listbox(search_frame, width='52', height='5', font=('calibre', 12))
 
 search_show_books = Label(search_frame, bg='white')
-search_list_box.place(x=10, y=90)
+search_list_box.place(x=10, y=85)
 
 # Check Region
 checkout_frame = Frame(window, width='500', height='150', bg=Pink, highlightbackground='black', highlightthickness=2)
@@ -157,8 +160,8 @@ return_error_box = Label(return_frame, font=('calibre', 11), bg='white', width='
 return_error_box.place(x=10, y=90)
 
 #Recommend Region
-recommend_frame = Frame(window, width='540', height='537', bg=Pink, highlightbackground='black', highlightthickness=2)
-recommend_frame.place(x='540', y='42')
+recommend_frame = Frame(window, width='540', height='470', bg=Pink, highlightbackground='black', highlightthickness=2)
+recommend_frame.place(x=540, y=42)
 
 recommend_title = Label(recommend_frame, text='Book Recommend', width='59', height='1', bg=DarkPurple, fg='white', font=('Helvetica', 13))
 recommend_title.place(x=0, y=0)
@@ -178,5 +181,18 @@ recommend_list_box = Listbox(recommend_frame, width='84', height='15')
 recommend_error_box = Label(recommend_frame, font=('calibre', 11), bg='white')
 recommend_list_box.place(x=13, y=90)
 
+#Check For Over 60 days
+days_error_frame = Frame(window, width='330', height='55', bg=Pink, highlightbackground='black', highlightthickness=2)
+days_error_frame.place(x=540, y=524)
+
+days_error_box = Label(days_error_frame, font=('calibre', 11), bg='white', width='34', height='2')
+days_error_box.place(x=6, y=5)
+
+#Quit Frame
+quit_button_frame = Frame(window, width='200', height='55', bg=Pink, highlightbackground='black', highlightthickness=2)
+quit_button_frame.place(x=880, y=524)
+
+quit_button = Button(quit_button_frame, text='Quit', width='20', height='2', font=('calibre', 11), fg='white', bg=DarkPurple, command=window.destroy)
+quit_button.place(x=2, y=2)
 window.mainloop()
 
