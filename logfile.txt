@@ -1,9 +1,11 @@
-RETURN | 29/11/2021 | hjfy | 12
-CHECKOUT | 29/11/2021 | coao | 12
-RETURN | 29/11/2021 | coao | 12
-CHECKOUT | 29/11/2021 | mopz | 1
-RETURN | 29/11/2021 | mopz | 1
-CHECKOUT | 29/11/2021 | coao | 6
+CHECKOUT | 06/09/2021 | coao | 4
+CHECKOUT | 11/09/2021 | dftr | 2
+RETURN | 15/09/2021 | hjfy | 12
+CHECKOUT | 29/09/2021 | coao | 12
+RETURN | 29/09/2021 | coao | 12
+CHECKOUT | 29/09/2021 | mopz | 1
+RETURN | 29/09/2021 | mopz | 1
+CHECKOUT | 29/09/2021 | coao | 6
 CHECKOUT | 29/11/2021 | coao | 1
 RETURN | 29/11/2021 | dftr | 2
 RETURN | 29/11/2021 | coao | 6
@@ -26,7 +28,6 @@ RETURN | 02/12/2021 | epda | 15
 RETURN | 02/12/2021 | gfer | 14
 CHECKOUT | 02/12/2021 | ghsf | 10
 RETURN | 02/12/2021 | fefe | 8
-RETURN | 02/12/2021 | fopa | 11
 RETURN | 02/12/2021 | ghsf | 10
 RETURN | 02/12/2021 | gsfe | 2
 CHECKOUT | 02/12/2021 | kpyh | 15
@@ -39,3 +40,20 @@ RETURN | 03/12/2021 | feaf | 14
 RETURN | 03/12/2021 | kpyh | 15
 RETURN | 03/12/2021 | erfd | 16
 CHECKOUT | 03/12/2021 | vrsd | 16
+CHECKOUT | 05/12/2021 | coao | 3
+RETURN | 05/12/2021 | coao | 3
+RETURN | 05/12/2021 | vrsd | 16
+CHECKOUT | 05/12/2021 | coao | 12
+CHECKOUT | 05/12/2021 | rafe | 16
+RETURN | 05/12/2021 | rafe | 16
+
+CHECKOUT | 06/12/2021 | coao | 2
+RETURN | 06/12/2021 | coao | 2
+CHECKOUT | 07/12/2021 | gwws | 7
+CHECKOUT | 07/12/2021 | fwef | 11
+CHECKOUT | 07/12/2021 | vrsf | 13
+RETURN | 07/12/2021 | vrsf | 13
+RETURN | 07/12/2021 | coao | 4
+CHECKOUT | 07/12/2021 | frvt | 1
+CHECKOUT | 07/12/2021 | thdt | 4
+CHECKOUT | 07/12/2021 | kiuf | 2
