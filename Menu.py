@@ -90,6 +90,11 @@ def checkoutsubmit():
         elif valid_member != True:
             checkout_error_box["text"] = ("Invalid Member ID")
             checkout_error_box.config(bg='red')
+
+    fig = plt.figure(figsize=(5.1,2.8))
+    canvas = FigureCanvasTkAgg(fig, master=recommend_frame)
+    canvas.get_tk_widget().place(x=13, y=230)
+
     tuple_list_of_books = database.num_of_occurences_in_log()
     book_id = []
     num_of_checkout = []
@@ -123,6 +128,12 @@ def returnsubmit():
             return_error_box["text"] = ("Invalid Book ID")
             return_error_box.config(bg='red')
             book_id_2.set("")
+
+    fig = plt.figure(figsize=(5.1,2.8))
+    canvas = FigureCanvasTkAgg(fig, master=recommend_frame)
+    canvas.get_tk_widget().place(x=13, y=230)
+
+
     tuple_list_of_books = database.num_of_occurences_in_log()
     book_id = []
     num_of_checkout = []
@@ -131,29 +142,43 @@ def returnsubmit():
     for books in tuple_list_of_books:
         book_id.append(books[0])
         num_of_checkout.append(books[1])
+
+    ax1 = fig.add_subplot(1,1,1)
+    ax1.bar(book_id,num_of_checkout, width=0.5)
+    canvas.draw()
 
 
 def recommendsubmit():
     recommend_list_box.delete(0,END)
     recommend_member_id = member_id_3.get()
     Results = bookrecommend.recommend(recommend_member_id)
+    if Results != False:
+        recommend_error_box.config(text=recommend_list_box.get(ANCHOR))
+        for i in range(0, len(Results)):
+            recommend_list_box.insert(i+1, Results[i])
 
-    recommend_error_box.config(text=recommend_list_box.get(ANCHOR))
-    for i in range(0, len(Results)):
-        recommend_list_box.insert(i+1, Results[i])
 
-    tuple_list_of_books = database.num_of_occurences_in_log()
-    book_id = []
-    num_of_checkout = []
+        fig = plt.figure(figsize=(5.1,2.8))
+        canvas = FigureCanvasTkAgg(fig, master=recommend_frame)
+        canvas.get_tk_widget().place(x=13, y=230)
 
-    print(tuple_list_of_books)
-    for books in tuple_list_of_books:
-        book_id.append(books[0])
-        num_of_checkout.append(books[1])
+        tuple_list_of_books = database.num_of_occurences_in_log()
+        book_id = []
+        num_of_checkout = []
 
-    ax1 = fig.add_subplot(1,1,(1,16))
-    ax1.bar(book_id,num_of_checkout, width=0.5)
-    canvas.draw()
+        for books in tuple_list_of_books:
+            book_id.append(books[0])
+            num_of_checkout.append(books[1])
+
+        ax1 = fig.add_subplot(1,1,(1,16))
+        ax1.bar(book_id,num_of_checkout, width=0.5)
+        canvas.draw()
+    else:
+        recommend_error_box.config(text=recommend_list_box.get(ANCHOR))
+        recommend_list_box.insert(0, "Member ID not found in log")
+
+
+
 
 DarkPurple = "#310d67"
 Pink = "#c41c6d"
@@ -252,14 +277,8 @@ recommend_submit_btn.place(x=400, y=35)
 
 recommend_list_box = Listbox(recommend_frame, width='84', height='8')
 recommend_list_box.place(x=13, y=90)
-
-#recommend_graph_label = Label(recommend_frame, width='72', height='18', bg='white')
-#recommend_graph_label.place(x=13, y=230)
 recommend_error_box = Label(recommend_frame, font=('calibre', 11), bg='white')
 
-fig = plt.figure(figsize=(5.1,2.8))
-canvas = FigureCanvasTkAgg(fig, master=recommend_frame)
-canvas.get_tk_widget().place(x=13, y=230)
 
 
 #Check For Over 60 days
