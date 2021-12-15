@@ -65,3 +65,8 @@ CHECKOUT | 08/12/2021 | esdd | 3
 RETURN | 08/12/2021 | ceaf | 2
 CHECKOUT | 08/12/2021 | fhjg | 2
 CHECKOUT | 13/12/2021 | sefa | 15
+RETURN | 13/12/2021 | sefa | 15
+CHECKOUT | 14/12/2021 | fedf | 15
+RETURN | 14/12/2021 | esdd | 3
+CHECKOUT | 14/12/2021 | gkgh | 6
+RETURN | 14/12/2021 | coao | 12
