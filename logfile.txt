@@ -70,3 +70,8 @@ CHECKOUT | 14/12/2021 | fedf | 15
 RETURN | 14/12/2021 | esdd | 3
 CHECKOUT | 14/12/2021 | gkgh | 6
 RETURN | 14/12/2021 | coao | 12
+CHECKOUT | 15/12/2021 | feie | 3
+CHECKOUT | 15/12/2021 | coao | 7
+CHECKOUT | 15/12/2021 |  | 16
+RETURN | 15/12/2021 | coao | 7
+RETURN | 15/12/2021 | fedf | 15

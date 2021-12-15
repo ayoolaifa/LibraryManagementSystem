@@ -8,10 +8,6 @@ def line_count():
         Count += 1
     return Count
 
-## TEST CODE ##
-## INPUT = print(line_count()) ##
-## OUTPUT = 17 ##
-
 ## Function to change database to a string ##
 def file_to_text():
     list_of_books = []
@@ -26,10 +22,6 @@ def file_to_text():
         if book != "":
             new_list_of_books.append(book) ## appends to new list
     return new_list_of_books
-
-## TEST CODE ##
-## INPUT = print(file_to_text()) ##
-## OUTPUT = [list of books in database] ##
 
 ## function get the book info from database from inputing book id ##
 def book_line_from_id(book_id):
@@ -50,14 +42,6 @@ def book_line_from_id(book_id):
         return new_required_book_list
     else:
         return False
-
-## TEST CODE ##
-## INPUT = print (book_line_from_id(8)) ##
-## OUTPUT =
-## ['8', 'Action', 'Lord Of The Rings', 'J. R. Tolkien', '29/11/2005', 'fefa']
-## INPUT = print (book_line_from_id(17)) ##
-## OUTPUT = False ##
-
 
 ## Functions makes a list of book which has same genre as book id inputted ##
 def genre_list(book_id):
@@ -99,14 +83,6 @@ def genre_list(book_id):
         genre_line_list = book_info.split(" | ")
     return genre_list
 
-## TEST CODE ##
-## INPUT = print(genre_list(10)) ##
-## OUTPUT = ['14 | Romance | Pride & Prejudice | Jane Austen | 01/09/2021 | 0']
-## TEST CODE ##
-## INPUT = print(genre_list(20)) ##
-## OUTPUT = []
-
-
 ## Function writes to database ##
 def write_to_file(list_of_books):
     file = open("database.txt", "w")
@@ -116,18 +92,12 @@ def write_to_file(list_of_books):
     file.write(string_of_books)
     file.close()
 
-## This function does not output anything ##
-## Changes are seen in database file ##
-
 ## Function appends to log file
 def write_to_log_file(function, date, member_id, book_id):
     f = open("logfile.txt", "a")
     f.write(function + " | " + str(date) +
             " | " + str(member_id) + " | " + str(book_id) + "\n")
     f.close()
-
-## This function does not output anything ##
-## Changes are seen in log file ##
 
 ## converts logfile to text
 def logfile_to_text():
@@ -144,8 +114,6 @@ def logfile_to_text():
         if log_line != "":
             new_list_of_logs.append(log_line) # appends to list
     return new_list_of_logs
-
-## Function return all of log file ##
 
 ## returns every book and the number of times they have been checked out ##
 def num_of_occurences_in_log():
@@ -170,6 +138,29 @@ def num_of_occurences_in_log():
     return tuple_list_of_books
 
 ## TEST CODE ##
-## INPUT = print(num_of_occurences_in_log()) ##
+if __name__ == "__main__":
+    print(num_of_occurences_in_log())
 ## OUTPUT = [(1, 3), (2, 6), (3, 3), (4, 3), (5, 1), (6, 2), (7, 1), (8, 2),
 ## (9, 2), (10, 2), (11, 1), (12, 3), (13, 1), (14, 2), (15, 4), (16, 3)]
+
+    print(genre_list(10))
+## OUTPUT = ['14 | Romance | Pride & Prejudice | Jane Austen | 01/09/2021 | 0']
+
+    print(genre_list(20))
+## OUTPUT = []
+
+    print (book_line_from_id(8))
+## OUTPUT =
+## ['8', 'Action', 'Lord Of The Rings', 'J. R. Tolkien', '29/11/2005', 'fefa']
+
+    print (book_line_from_id(17))
+## OUTPUT = False ##
+
+    print(file_to_text())
+## OUTPUT = [list of books in database] ##
+
+    print(line_count())
+## OUTPUT = 17 ##
+
+    print(logfile_to_text())
+## OUTPUT = the entire Log file in a list

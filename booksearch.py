@@ -18,10 +18,10 @@ def search(searchterm):
             searched_list.append(list_of_books[i])
     return searched_list
 
-
 ## TEST CODE
-## INPUT = print (search("Dune"))
+if __name__ == "__main__":
+    print (search("Dune"))
 ## OUTPUT = ['3 | Sci-Fi | Dune | Frank Herbert | 24/04/2000 | MemberID',
 ##          '15 | Sci-Fi | Dune | Frank Herbert | 18/08/2000 | MemberID']
-## INPUT = print(search("Hello"))
+    print(search("Hello"))
 ## OUTPUT = []

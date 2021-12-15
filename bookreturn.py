@@ -8,7 +8,6 @@ def returnbook(book_id):
     d1 = today.strftime("%d/%m/%Y")
     Returned = False
     list_of_books = database.file_to_text()
-    print("heal")
 ## for loop for each line in database
     for line in range(0, len(list_of_books)):
 
@@ -47,9 +46,9 @@ def returnbook(book_id):
 
     return Returned ## return boolean variable
 
-
 ## TEST CODE ##
-## INPUT = print(returnbook(7))
+if __name__ == "__main__":
+    print(returnbook(7))
 ## OUTPUT = True
-## INPUT = print(returnbook(15))
+    print(returnbook(15))
 ## OUTPUT = False

@@ -58,8 +58,6 @@ def list_of_popular_books(book_recommended_list, books_read_by_member):
                     if book_id[0] != line[0] and new_book[5] == "0":
                         return new_book_string
 
-
-
 def recommend(member_id):
     final_recommended_books = [] ## final list of recommended books
     member_id_log = [] ## list of logs with member id
@@ -138,9 +136,10 @@ def recommend(member_id):
     return final_recommended_books
 
 ## TEST CODE ##
-## INPUT = print(recommend("coao")) ##
+if __name__ == "__main__":
+    print(recommend("coao"))
 ## OUTPUT = [list of recommended books] ##
-## INPUT = print(recommend("mnil")) ##
+    print(recommend("mnil"))
 ## OUTPUT = False ##
 
 
