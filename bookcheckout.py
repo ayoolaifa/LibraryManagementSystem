@@ -14,7 +14,7 @@ def checkout(book_id, member_id):
         book_line_list = list_of_books[line].split(" | ")
 
         ## checks if book id are the same and the book is not checked out
-        if (member_id != ""):
+        if ((member_id != "") and len(member_id) == 4):
             if book_line_list[0] == str(book_id) and book_line_list[5] == "0":
                 available = True
                 book_line_list[5] = member_id ## changed book info with member id
@@ -43,11 +43,12 @@ def checkout(book_id, member_id):
 ## TEST CODE ##
 if __name__ == "__main__":
     print(checkout(7, "coao"))
-    ## OUTPUT = False ##
+    ## OUTPUT = True ##
     print(checkout(16, ""))
     ## OUTPUT = False ##
     print(checkout(21, "afse"))
     ## OUTPUT = False ##
-    print(checkout(3, "feie"))
-    ## OUTPUT = True ##
+    print(checkout(3, "seff"))
+    ## OUTPUT = False ##
+    print(checkout(16, "hyrfg"))
 

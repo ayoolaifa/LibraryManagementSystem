@@ -48,7 +48,7 @@ def returnbook(book_id):
 
 ## TEST CODE ##
 if __name__ == "__main__":
-    print(returnbook(7))
+    print(returnbook(4))
 ## OUTPUT = True
-    print(returnbook(15))
+    print(returnbook(12))
 ## OUTPUT = False
